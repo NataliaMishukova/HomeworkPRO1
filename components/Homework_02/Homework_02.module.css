@@ -1,0 +1,26 @@
+.container {
+  background-color: gray;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction:column;
+  padding: 70px;
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:row;
+}
+head{
+  justify-content: top;
+
+}h1{
+  color:cornsilk;
+}
+
+
+
+
