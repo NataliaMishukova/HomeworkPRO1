@@ -1,8 +1,12 @@
+.avatar {
+    position:relative;
+    bottom: 45px;
+}
+
 .image {
   height: 300px;
+  width: 300px;
   border-radius: 50%;
-
-   
 }
 
 .container {
@@ -17,10 +21,12 @@
   width:310px;
 }
 
-.container p {
-  text-align: center;
+.description {
+    height: 30%;
 }
-p {
+
+.description p {
+  text-align: center;
   font-size: 1.3em;
   margin: 0px 0px 5px 0px;
 }
