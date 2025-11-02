@@ -1,25 +1,35 @@
-import type { JSX } from "react";
-import "./App.css";
-import CarShop from "./components/CarShop/CarShop";
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-import Homework_02 from "./components/Homework_02/Homework_02";
-import ProfileCard from "./components/ProfileCard/ProfileCard";
-import Counter from "./components/Counter/Counter";
-import Sandwich from "./components/Sandwich/Sandwich";
-import Alcohol from "./components/Alcohol/Alcohol";
-import Homework_03 from "./components/Homework_03/Homework_03";
-import Feedback from "./components/Feedback/Feedback";
+function App() {
+  const [count, setCount] = useState(0)
 
-function App(): JSX.Element {
   return (
-    <div>
-      <Homework_03 />
-      <Feedback />
-      {/*<Homework_02 />*/}
-     {/*<Sandwich />*/}
-     {/* <Counter />*/}
-    </div>
-  );
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
 
-export default App;
+export default App
