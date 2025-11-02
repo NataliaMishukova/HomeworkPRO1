@@ -1,4 +1,4 @@
-import { useState, type JSX } from "react";
+import { useEffect, useState, type JSX } from "react";
 import style from "./Alcohol.module.css";
 
 export default function Alcohol(): JSX.Element {
@@ -18,6 +18,8 @@ export default function Alcohol(): JSX.Element {
     setName(strDrink);
     setImage(strDrinkThumb); /* далее используем неиспользуемые ранее поля */
   }
+
+  useEffect(()=>{loadAlcohol()},[])
   return (
     <div>
       <h1>Alcohol :{name}</h1>

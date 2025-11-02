@@ -5,12 +5,19 @@
 
  
 }*/
-.container{
+.container {
   display: flex;
   height: 100vh;
+  justify-content: center;
+  height: auto;
 }
 .body {
- background-image:  linear-gradient(43deg,rgba(70, 87, 121, 1) 40%, rgba(153, 179, 198, 1) 88%, rgba(153, 179, 198, 1) 92%);
+  background-image: linear-gradient(
+    43deg,
+    rgba(70, 87, 121, 1) 40%,
+    rgb(8, 10, 11) 88%,
+    rgba(153, 179, 198, 1) 92%
+  );
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -20,37 +27,37 @@
   height: 100vh;
   margin-left: 0;
 }
-.container {
-  display: flex;
-  justify-content: center;
-}
 
 .btn {
   margin: 15px;
   width: 250px;
   border: 2px solid black;
-  color:#FF83A5;
+  color: #ff83a5;
   font-size: larger;
-  background-image: linear-gradient(14deg,rgba(70, 87, 121, 1) 31%, rgba(34, 24, 49, 1) 68%);
+  background-image: linear-gradient(
+    14deg,
+    rgba(70, 87, 121, 1) 31%,
+    rgba(34, 24, 49, 1) 68%
+  );
   padding: 15px;
   border-radius: 10%;
 }
-.result{
+.result {
   margin: 15px;
-  width:100px;
-   padding: 15px;
+  width: 100px;
+  padding: 15px;
 }
 
 h1 {
-  color: #CCCCCC;
+  color: #ff83a5;
   text-align: center;
 }
 
 span {
   margin: 20px;
   font-size: 30px;
-  font-weight: 700 ;
-  text-shadow: 2px 2px 5px #FF83A5;
+  font-weight: 700;
+  text-shadow: 2px 2px 5px #ff83a5;
 }
 img {
   width: 50%;

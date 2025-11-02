@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import type { JSX } from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import LayOut from "./components/LayOut/LayOut";
+import Home from "./components/Home/Home";
+import Alcohol from "./components/Alcohol/Alcohol";
+import CarShop from "./components/CarShop/CarShop";
+import Counter from "./components/Counter/Counter";
+import UsersPage from "./components/UsersPage/UsersPage";
+import UserPage from "./components/UsersPage/UserPage";
+import Homework_02 from "./components/Homework_02/Homework_02";
+import Homework_03 from "./components/Homework_03/Homework_03";
+import Dogs from "./components/Dogs/Dogs";
+import Playground from "./components/Playground/Playground";
+import Sandwich from "./components/Sandwich/Sandwich";
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+function App(): JSX.Element {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<LayOut />}>
+        <Route index element={<Home />} />
+        <Route path="alcohol" element={<Alcohol />} />
+        <Route path="carshop" element={<CarShop />} />
+        <Route path="counter" element={<Counter />} />
+        <Route path="dogs" element={<Dogs />} />
+        <Route path="playground" element={<Playground />} />
+        <Route path="home" element={<Home />} />
+        <Route path="sandwich" element={<Sandwich />} />
+        <Route path="userspage" element={<UsersPage />} />
+       { /*<Route path="contactform" element={<ContactForm />} />*/}
+        <Route path="/userspage/:userId" element={<UserPage />} />
+        <Route path="Homework_02" element={<Homework_02 />} />
+        <Route path="Homework_03" element={<Homework_03 />} />
+      </Route>
+    </Routes>
+  );
 }
 
-export default App
+export default App;

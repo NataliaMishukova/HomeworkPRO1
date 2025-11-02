@@ -1,6 +1,6 @@
 import type { JSX } from "react";
 import ProfileCard from "../ProfileCard/ProfileCard2";
-import style from "./Homework_02.module.css";
+import style from './Homework_02.module.css';
 
 export default function CardGallery(): JSX.Element {
   return (
